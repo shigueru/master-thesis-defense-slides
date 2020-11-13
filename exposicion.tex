@@ -1,0 +1,150 @@
+ \documentclass[xcolor=dvipsnames]{beamer}
+\input{auxiliar/paquetes}
+
+% #####            #####
+%     DATOS DE TITULO
+% #####            #####
+
+\author{Shigueru Nagata }
+\date{2019}
+\title{C\'alculos de estructura electr\'onica en perovskitas $BiFeO_{3}$ y 
+$YCrO_{3}$}
+\institute{Universidad Nacional de Ingenier\'ia \\ Facultad de ciencias}
+
+\begin{document}
+    
+% ----- TITULO ----
+    \begin{frame}
+        \titlepage
+    \end{frame}
+
+% ----- Indice ----
+
+\begin{frame}
+    \frametitle{\'Indice}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Introducci\'on
+            \item Conceptos b\'asicos
+                \begin{itemize}
+                    \item Aproximaci\'on de Born-Oppenheimer
+                    \item M\'etodo de Hartree-Fock
+                    \item Teoremas de Hohenberg-Kohn
+                    \item Ecuaci\'on de Kohn-Sham
+                    \item Aproximaci\'on de densidad local
+                    \item Par\'ametro U de Hubbard
+                    \item Pseudopotencial
+                    \item Arreglos antiferromagn\'eticos
+                    \item Bucle autoconsistente
+                \end{itemize}
+            \item Resultados
+                \begin{itemize}
+                    \item Optimizaci\'on de par\'ametros iniciales
+                    \item Relajaci\'on de la estructura cristalina
+                    \item Bandas de energ\'ia y densidades de estado
+                    \item Comparaci\'on entre $BiFeO_{3}$ y $YCrO_{3}$
+                \end{itemize}
+            \item Conclusiones
+        \end{enumerate}
+    \end{multicols}
+\end{frame}
+
+\section{Introducci\'on}
+\input{contenido/teoria/Motivacion}
+
+% #####            #####
+%        TEORIA
+% #####            ##### 
+
+\section{Conceptos b\'asicos}
+
+% ======================
+% Aproximacion Born-Openheimer
+% ======================
+
+\subsection{Aproximaci\'on de Born-Oppenheimer}
+\input{contenido/teoria/Openheimer}
+
+% ======================
+% Hartree-Fock
+% ======================
+
+\subsection{M\'etodo de Hartree-Fock}
+\input{contenido/teoria/HartreeFock}
+
+% ======================
+% Teoremas Hohenberg-Kohn
+% ======================
+
+\subsection{Teoremas de Hohenberg-Kohn}
+\input{contenido/teoria/HohenbergKohn}
+
+% ======================
+% Ecuacion kohn-Sham
+% ======================
+
+\subsection{Ecuaci\'on de Kohn-Sham}
+\input{contenido/teoria/KohnShamEcuacion}
+
+% ======================
+% Aproximacion densidad local
+% ======================
+
+\subsection{Aproximaci\'on de densidad local}
+\input{contenido/teoria/AproximacionDensidadLocal}
+
+\subsection{Potencial U de Hubbard}
+\input{contenido/teoria/Hubbard}
+
+% ======================
+% Pseudopotencial
+% ======================
+
+\subsection{Pseudopotencial}
+\input{contenido/teoria/Pseudopotencial}
+
+% ======================
+% Perovskitas
+% ======================
+
+\subsection{Arreglos antiferromagn\'eticos}
+\input{contenido/teoria/Perovskitas}
+
+\subsection{Bucle autoconsistente}
+\input{contenido/teoria/BucleAutoconsistente}
+
+\subsection{Quantum ESPRESSO}
+\input{contenido/teoria/QuantumEspresso}
+
+\subsection{Energ\'ia de corte}
+\input{contenido/teoria/EnergiaCorte}
+
+\subsection{Muestreo de la $1^{ra}$ zona de Brillouin}
+\input{contenido/teoria/ZonaBrillouin}
+
+% #####            #####
+%       RESULTADOS
+% #####            ##### 
+\section{Resultados}
+
+\subsection{Optimizaci\'on de par\'ametros iniciales}
+\input{contenido/resultados/Optimizacion}
+
+\subsection{Relajaci\'on de la estructura cristalina}
+\input{contenido/resultados/Relajacion}
+
+\subsection{Bandas de energ\'ia y densidades de estado}
+\input{contenido/resultados/FerritaBismuto}
+\input{contenido/resultados/CromitaItrio}
+
+\subsection{Comparaci\'on}
+\input{contenido/resultados/Comparacion}
+
+% #####            #####
+%       CONCLUSION
+% #####            ##### 
+\section{Conclusiones}
+
+\input{contenido/conclusiones/Conclusiones}
+
+\end{document}

@@ -1,0 +1,31 @@
+\begin{frame}{Aproximaci\'on de densidad local}
+Permite aproximar el t\'ermino de intercambio-correlaci\'on.
+\begin{eqnarray}
+E_{xc}^{LDA} [\rho ] = \int d^{3}r \rho (r) \varepsilon _{xc}^{unif} [\rho 
+(r)] \nonumber
+\end{eqnarray}
+\begin{columns}[t]
+    \column{0.5\textwidth}
+        \[   \varepsilon _{x}^{unif} (\rho ) = -\frac{3}{4} \left( \frac{3}{\pi 
+        } \right) 
+        ^{1/3} \rho ^{1/3}\]
+    \column{0.5\textwidth}
+    \\
+    {\scriptsize Many-Particle Physics. Gerald D. Mahan pp.299}
+\end{columns}
+
+\begin{columns}[t]
+    \column{0.7\textwidth}
+\[    \varepsilon _{c}^{unif} (\rho ) = \left\{ \begin{array}{ll}
+A \ln r_{s} + B + C r_{s} \ln r_{s} & \textrm{; } r_{s} \to 0 \\ 
+\frac{D}{r_{s}} + \frac{E}{r_{s}^{3/2}} & \textrm{; } r_{s} \to \infty
+\end{array} \right.\]
+\[
+r_{s} = \left( \frac{3}{4\pi \rho} \right)^{1/3}
+\]
+    \column{0.3\textwidth}
+    \\
+$r_{s}$ : radio de wigner-Seitz \\
+{\scriptsize S. H. Vosko et al, Can. J. Phys. 58, 1200 (1980)}
+\end{columns}
+\end{frame}

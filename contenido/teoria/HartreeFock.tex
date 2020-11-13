@@ -1,0 +1,30 @@
+\begin{frame}{M\'etodo de Hartree-Fock}
+    
+    \begin{block}{Determinante de Slater}
+        \begin{equation}
+        \psi (r_{1}r_{2}\cdots r_{N}) = \frac{1}{\sqrt{N!}} 
+        \left ( 
+        \begin{array}{cccc}
+        \phi _{1}(r_{1}) & \phi _{2}(r_{1}) & \cdots & \phi _{N}(r_{1}) \\
+        \phi _{1}(r_{2}) & \phi _{2}(r_{2}) & \cdots & \phi _{N}(r_{2}) \\
+        \vdots & \vdots & \ddots & \vdots \\
+        \phi _{1}(r_{N}) & \phi _{2}(r_{N}) & \cdots & \phi _{N}(r_{N})
+        \end{array} 
+        \right ) \nonumber
+        \end{equation}
+    \end{block}
+    
+    \begin{block}{Ecuaci\'on de Hartree-Fock}
+        \begin{eqnarray}
+        \big [ - \sum _{i}^{n} \frac{1}{2} \nabla _{i}^{2} - \sum _{i} ^{N} 
+        \frac{Z_{i}}{|R_{i}-r|} + \sum _{i \ne j} ^{n} \int \frac{|\phi 
+            _{i}(r^{\prime})|^{2}}{|r-r^{\prime }|}d^{3}r^{\prime} \big] \phi 
+            _{j} 
+        (r) \nonumber \\ - \sum _{i} \int dr^{\prime} \frac{\phi 
+            _{i}^{*}(r^{\prime}) \phi 
+            _{j}(r^{\prime})}{|r^{\prime}-r|} \phi_{i}(r) = E_{j} \phi _{j}(r) 
+        \nonumber
+        \end{eqnarray}
+    \end{block}
+    
+\end{frame}
